@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Test Map Reduce</title>
+  <script data-main="app" src="require.js"></script>
+
+  <style>
+    table {
+      width: 100%;
+    }
+
+    th {
+      width: 14.285714286%;
+    }
+
+    tr td, tr th, tr {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <label>Iterations</label>
+  <input id="iterations" type="number" value="100" placeholder="100"/>
+</div>
+<div>
+  <label for="profile">Profile?</label>
+  <input type="checkbox" id="profile" value="false"/>
+</div>
+<div>
+  <label for="random">Use random data?</label>
+  <input type="checkbox" id="random" value="false"/>
+</div>
+<div>
+  <label>Sample size</label>
+  <input id="dataSize" type="number" value="100000" placeholder="100000"/>
+</div>
+<div>
+  <button id="testAll">Test all</button>
+</div>
+<table>
+  <thead>
+  <tr>
+    <th>Date</th>
+    <th>Test Name</th>
+    <th>Avg</th>
+    <th>Std. Desviation</th>
+    <th>Iterations</th>
+    <th>Sample size</th>
+    <th>Random Data?</th>
+  </tr>
+  </thead>
+  <tbody id="results">
+  </tbody>
+</table>
+</body>
+</html>
